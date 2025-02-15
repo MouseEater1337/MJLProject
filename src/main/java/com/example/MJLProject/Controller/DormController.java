@@ -23,7 +23,7 @@ public class DormController {
  @PostMapping("/add/{age}") // entire URI is https://localhost:8080/dog/add
  public Dorm addDorm(@RequestBody Dorm newDorm, @RequestParam("breed") String breed,
    @PathVariable("age") int age){
-   return dormService.addNewDog(newDorm, breed, age);
+   return dormService.addNewDorm(newDorm, breed, age);
  }
 
 

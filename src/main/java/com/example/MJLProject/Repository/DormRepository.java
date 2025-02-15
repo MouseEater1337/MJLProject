@@ -8,12 +8,13 @@ import org.springframework.stereotype.Repository;
 
 
 @Repository
-public interface DogRepository extends JpaRepository<Dorm, Integer> {
+public interface DormRepository extends JpaRepository<Dorm, Integer> {
 
 
  //Search up Spring JPA Naming Conventions for more details
  Dorm findByName(String name);
 
+ //findAllByType(boolean type)
 
  //Can write really complex queries with native MySQL like so - search up Spring custom queries for more
  //@Query(nativeQuery = true, value = "Complex MySQL Query Here")
