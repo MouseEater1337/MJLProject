@@ -19,13 +19,16 @@ public class Dorm {
   @Column (name = "name", nullable = false)
   private String name;
 
-  @Column(name = "type")
+  @Column(name = "type", nullable = false)
   private String type;
 
-  @Column (name = "price")
+  @Column (name = "price", nullable = false)
   private int price;
 
-  @Column(name = "isSoutheast")
+  @Column(name = "isSoutheast", nullable = false)
   boolean isSoutheast;
+
+  @Column(name = "learning community")
+  String learningCom;
 
 }
