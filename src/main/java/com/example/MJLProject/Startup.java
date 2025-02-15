@@ -9,7 +9,6 @@ public class Startup {
   public void init() {
     // Logic to be executed at startup
     System.out.println("Application started");
+    
   }
-
-  
 }
