@@ -2,11 +2,13 @@ package com.example.MJLProject.Entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
 @Data //generate toString, getters, and setters
+@Builder
 @AllArgsConstructor
 @Table(name = "dorm.table")
 public class Dorm {

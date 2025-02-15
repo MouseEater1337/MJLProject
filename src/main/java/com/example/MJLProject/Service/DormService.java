@@ -18,7 +18,7 @@ public class DormService {
  public Dorm addNewDorm(Dorm newDorm, String name, String type, int price, boolean isSoutheast){
 
 
-   if (newDorm == null || name == null || name.isBlank() || type == null || type.isBlank() || price < 0 || isSoutheast == null){
+   if (newDorm == null || name == null || name.isBlank() || type == null || type.isBlank() || price < 0){
      return null;
    }
 
