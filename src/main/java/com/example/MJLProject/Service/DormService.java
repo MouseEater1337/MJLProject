@@ -1,7 +1,7 @@
 package com.example.MJLProject.Service;
 
-import com.Example.demo.Entity.Dorm;
-import com.Example.demo.Repository.DormRepository;
+import com.example.MJLProject.Entity.Dorm;
+import com.example.MJLProject.Repository.DormRepository;
 import lombok.Builder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -37,7 +37,7 @@ public class DormService {
 }
 
 
-public Dog getDorm(String name){
+public Dorm getDorm(String name){
  return dormRepository.findByName(name);
 }
 

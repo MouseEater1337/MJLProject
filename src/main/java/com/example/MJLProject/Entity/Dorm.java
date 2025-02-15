@@ -23,12 +23,9 @@ public class Dorm {
   private String type;
 
   @Column (name = "price", nullable = false)
-  private int price;
+  private double price;
 
   @Column(name = "isSoutheast", nullable = false)
   boolean isSoutheast;
-
-  @Column(name = "learning community")
-  String learningCom;
 
 }

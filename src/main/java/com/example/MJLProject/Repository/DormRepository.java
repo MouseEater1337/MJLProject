@@ -11,14 +11,21 @@ import org.springframework.stereotype.Repository;
 public interface DormRepository extends JpaRepository<Dorm, Integer> {
 
 
- //Search up Spring JPA Naming Conventions for more details
- Dorm findByName(String name);
+  //Search up Spring JPA Naming Conventions for more details
+  Dorm findByName(String name);
 
- //findAllByType(boolean type)
+  //find by dorm type
+  Dorm[] findAllByDormType(String type);
 
- //Can write really complex queries with native MySQL like so - search up Spring custom queries for more
- //@Query(nativeQuery = true, value = "Complex MySQL Query Here")
- //Dog findByNameAndBreedIsLike(String name, String breed);
+  //find by budget
+  Dorm[] findAllByPriceLessThanEqual(double price);
+
+  //find by southeast/lakeshore
+  Dorm[] findAllByTypeSoutheast(boolean type);
+
+  //Can write really complex queries with native MySQL like so - search up Spring custom queries for more
+  //@Query(nativeQuery = true, value = "Complex MySQL Query Here")
+  //Dog findByNameAndBreedIsLike(String name, String breed);
 
 
 
