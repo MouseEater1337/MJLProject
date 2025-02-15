@@ -1,0 +1,31 @@
+package com.example.MJLProject.Entity;
+
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Data //generate toString, getters, and setters
+@AllArgsConstructor
+@Table(name = "dorm.table")
+public class Dorm {
+  @Id
+  @SequenceGenerator(name = "dorm_seq", sequenceName = "dorm_seq", allocationSize = 1)
+  @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "dorm_seq")
+  @Column(name = "dorm_id")
+  private Integer id;
+
+  @Column (name = "name", nullable = false)
+  private String name;
+
+  @Column(name = "type")
+  private String type;
+
+  @Column (name = "price")
+  private int price;
+
+  @Column(name = "isSoutheast")
+  boolean isSoutheast;
+
+}

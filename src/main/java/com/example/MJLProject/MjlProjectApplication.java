@@ -8,7 +8,7 @@ public class MjlProjectApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(MjlProjectApplication.class, args);
-		heucods
+		
 	}
 
 }
